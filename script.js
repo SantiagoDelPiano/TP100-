@@ -167,3 +167,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const cerrarAnuncio = document.getElementById('cerrar-anuncio');
+  const anuncioFloat = document.getElementById('anuncio-float');
+  if (cerrarAnuncio && anuncioFloat) {
+    cerrarAnuncio.addEventListener('click', function() {
+      anuncioFloat.style.display = 'none';
+    });
+  }
+});
